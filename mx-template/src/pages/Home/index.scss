@@ -1,0 +1,13 @@
+.home_container{
+    background: blanchedalmond;
+    &-title{
+        font-size: 20px;
+        color: yellow;
+    }
+    &-banner{
+        width: 200px;
+        height: 100px;
+        background: url('../../assets/banner01_bg.png') no-repeat;
+        background-size: cover;
+    }
+}

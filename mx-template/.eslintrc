@@ -1,0 +1,52 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "globals": {
+        "process": true,
+        "console": true,
+        "__dirname": true
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "plugins": [
+        "react",
+        "babel"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "experimentalDecorators": true,
+            "jsx": true
+        }
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "indent": ["error","tab"],
+        "linebreak-style": ["error","unix"],
+        "quotes": "off",
+        "semi": ["error","always"],
+        "no-unused-vars": ["off", {"args": "none", "ignoreRestSiblings": false }],
+        "no-useless-escape": ["off"],
+        "no-empty": ["off"],
+        "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
+        "semi-spacing": ["error", {"before": false, "after": true}],
+        "comma-spacing": ["error", {"before": false, "after": true}],
+        "space-unary-ops": ["error", { "words": true, "nonwords": false }],
+        "space-infix-ops": ["error", {"int32Hint": false}],
+        "no-console": 0,
+        "jsx-a11y/role-has-required-aria-props": 0,
+        "jsx-a11y/aria-props": 0,
+        "react/prop-types": 0,
+        "no-mixed-spaces-and-tabs": 0,
+        "no-tabs": "off",
+        "no-sparse-arrays": "off",
+        "react/display-name": "off",
+        "react/no-find-dom-node": "off",
+        "no-constant-condition": "off",
+        "react/no-unescaped-entities": "off"
+    }
+}
