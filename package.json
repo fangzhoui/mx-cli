@@ -1,5 +1,5 @@
 {
-  "name": "mx-cli",
+  "name": "moxie-cli",
   "version": "0.0.1",
   "description": "a cli for react-template",
   "main": "./bin/jsm.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "mx-cli": "./bin/jsm.js"
+    "moxie-cli": "./bin/jsm.js"
   },
   "keywords": [
     "react",
