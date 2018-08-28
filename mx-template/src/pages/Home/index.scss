@@ -1,10 +1,14 @@
 .home_container{
     background: blanchedalmond;
+    display: flex;
+    align-items: center;
     &-title{
+        flex: 1;
         font-size: 20px;
         color: yellow;
     }
     &-banner{
+        flex: 1;
         width: 200px;
         height: 100px;
         background: url('../../assets/banner01_bg.png') no-repeat;

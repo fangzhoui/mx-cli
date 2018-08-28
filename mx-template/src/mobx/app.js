@@ -4,6 +4,7 @@ class App {
 	@observable title = "loading";
 
 	@action changeTitle(params){
+		console.log(params);
 		this.title = params;
 	}
 }

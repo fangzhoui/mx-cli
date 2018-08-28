@@ -1,6 +1,6 @@
 {
   "name": "moxie-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a cli for react-template",
   "main": "./bin/jsm.js",
   "scripts": {

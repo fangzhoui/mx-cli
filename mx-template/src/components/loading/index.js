@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Spin } from 'antd';
+import { Toast } from 'antd-mobile';
 
 export default class Loading extends Component{
 	constructor(props){
@@ -8,7 +8,14 @@ export default class Loading extends Component{
 
 		};
 	}
+	UNSAFE_componentWillMount(){
+		Toast.loading('Loading...', 0, () => {});
+	}
+
+	componentWillUnmount(){
+		Toast.hide();
+	}
 	render(){
-		return <Spin tip="Loading..."></Spin>;
+		return null;
 	}
 }

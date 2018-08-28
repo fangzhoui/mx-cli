@@ -2,9 +2,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack'); //访问内置的插件
 const paths = require('./paths');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const devMode = process.env.NODE_ENV !== 'production';
 const AutoDllPlugin = require('autodll-webpack-plugin');
 
+const devMode = process.env.NODE_ENV !== 'production';
 module.exports = {
 	resolve: {
 		extensions: ['.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx'],
@@ -120,6 +120,6 @@ module.exports = {
 		net: 'empty',
 		tls: 'empty',
 		child_process: 'empty',
-	},
+	}
 };
 

@@ -9,8 +9,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const prodConfig = merge(config, {
 	mode: 'production',
 	entry: {
-		main: [require.resolve('./polyfills'), paths.appIndexJs],
-		vendor: ['react', 'react-dom', 'react-router-dom']
+		main: [require.resolve('./polyfills'), paths.appIndexJs]
 	},
 	output: {
 		path: paths.appBuild,

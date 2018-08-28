@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Loading from '../components/loading';
 import App from '../pages/index';
 // 按路由拆分代码
@@ -31,7 +31,7 @@ export default () => (
 		<App>
 			<Switch>
 				<Route exact path="/" component={getComponent('Home')} />
-				<Route exact path="/login" component={getComponent('Login')} />
+				<Route path="/login" component={getComponent('Login')} />
 			</Switch>
 		</App>
 	</Router>

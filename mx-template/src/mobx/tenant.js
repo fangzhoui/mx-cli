@@ -12,7 +12,7 @@ class Tenant {
 
 	@action async Logined(){
 		let params = await axiosHelper.get({
-			url: '/loginDate.json'
+			url: '/loginDate.json',
 		}).catch(err => {
 			console.log(err);
 		});
