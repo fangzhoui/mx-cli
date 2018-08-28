@@ -1,13 +1,13 @@
 {
-  "name": "jsm-cli",
-  "version": "0.0.2",
-  "description": "react boilerplates",
+  "name": "mx-cli",
+  "version": "0.0.1",
+  "description": "a cli for react-template",
   "main": "./bin/jsm.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "mx-tem": "./bin/jsm.js"
+    "mx-cli": "./bin/jsm.js"
   },
   "keywords": [
     "react",
@@ -16,7 +16,7 @@
     "generator",
     "boilerplates"
   ],
-  "author": "stmu",
+  "author": "fangzhoui",
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.3.0",
