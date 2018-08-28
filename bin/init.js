@@ -10,7 +10,7 @@ const map = require('map-stream');
 const common = require('./common');
 const {message, write} = common;
 
-const template = 'fangzhoui/mx-template';
+const template = '';
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -36,10 +36,11 @@ function initComplete(app) {
   process.exit();
 }
 
-function createProject(dest) {
+function createProject(dest, type) {
   const spinner = ora('downloading template')
   spinner.start()
   if (fs.existsSync(boilerplatePath)) fs.emptyDirSync(boilerplatePath)
+  (type === 'mobile') ? template = 'fangzhoui/mx-template/tree/dev' : template = 'fangzhoui/mx-template/tree/master'
   download(template, boilerplatePath, function (err) {
     spinner.stop()
     if (err) {
@@ -81,7 +82,7 @@ function createProject(dest) {
 })
 }
 
-function init({app}) {
+function init({app, type}) {
   const dest = process.cwd();
   const appDir = join(dest, `./${app}`);
   if (fs.existsSync(appDir)) {
@@ -95,7 +96,7 @@ function init({app}) {
             .emptyDir(appDir)
             .then(() => {
               spinner.stop();
-              createProject(appDir);
+              createProject(appDir, type);
             })
             .catch(err => {
               console.error(err);
@@ -106,7 +107,7 @@ function init({app}) {
       }
     );
   } else {
-    createProject(appDir);
+    createProject(appDir, type);
   }
 }
 

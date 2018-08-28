@@ -1,5 +1,5 @@
 {
-  "name": "fangzhoui",
+  "name": "mx-cli",
   "version": "0.0.1",
   "description": "a cli for react-template",
   "main": "./bin/jsm.js",

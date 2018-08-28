@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-const fs = require('fs-extra');
-const path = require('path');
 const program = require('commander');
 const common = require('./common');
-const generate = require('./generate');
 const init = require('./init');
+// const fs = require('fs-extra');
+// const path = require('path');
+// const generate = require('./generate');
 
 const { message } = common;
 
@@ -21,17 +21,24 @@ function paramsToObj (paramsArr) {
 
 if (process.argv.slice(2).join('') === '-v') {
   const pkg = require('../package');
-  message.info('jsm-cli version ' + pkg.version);
+  message.info('mx-cli version ' + pkg.version);
   process.exit()
 }
 
 program
-  .command('new [name]')
+  .command('new [name] <type>')
   .alias('n')
-  .description('Creates a new project')
-  .action(function (name) {
+  .description('Creates a new project type only antd or mobile')
+  .action(function (name, type) {
     const projectName = name || 'myApp';
-    init({ app: projectName })
+    if(type){
+      init({ 
+        app: projectName,
+        type
+      })
+    } else {
+      init({ app: projectName })
+    }
   });
 
   // program
