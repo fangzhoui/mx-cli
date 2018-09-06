@@ -1,13 +1,13 @@
 {
   "name": "moxie-cli",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "a cli for react-template",
   "main": "./bin/jsm.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "moxie-cli": "./bin/jsm.js"
+    "moxie": "./bin/jsm.js"
   },
   "keywords": [
     "react",
