@@ -1,13 +1,13 @@
 {
-  "name": "moxie-cli",
-  "version": "0.0.4",
+  "name": "react-webpack-template",
+  "version": "0.0.5",
   "description": "a cli for react-template",
   "main": "./bin/jsm.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "moxie": "./bin/jsm.js"
+    "rwp": "./bin/jsm.js"
   },
   "keywords": [
     "react",
