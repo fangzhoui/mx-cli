@@ -1,13 +1,12 @@
-# react-webpack-template
+# react-webpack-tem
 ## 一个react的webpack配置模板
 
-### commands
+#### 使用说明
 
-#### Creates a new project
-
-##### 使用方式，按照下面命令创建任务，name是项目名字，type有两种类型，值为antd时为antd的模板，值为mobile时为antd-mobile模板配置
-
-rwp new [name] <type>
+1. npm i react-webpack-tem -g
+2. rwp new demo antd 或者 rwp new demo mobile （一个是antd的配置，一个是antd-mobile的配置）
+3. cd demo
+4. npm run dev
 
 
 

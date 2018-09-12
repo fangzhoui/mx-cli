@@ -39,9 +39,10 @@ function initComplete(app) {
 function createProject(dest, type) {
   const spinner = ora('downloading template')
   spinner.start();
-  (type === 'mobile') ? template = 'github:fangzhoui/mx-template#mobile' : template = 'github:fangzhoui/mx-template#antd';
+  // (type === 'mobile') ? template = 'github:fangzhoui/react-webpack-template#mobile' : template = 'github:fangzhoui/react-webpack-template#antd';
+  (type === 'mobile') ? template = 'direct:https://github.com/fangzhoui/react-webpack-template.git#dev' : template = 'direct:https://github.com/fangzhoui/react-webpack-template.git';
   if (fs.existsSync(boilerplatePath)) fs.emptyDirSync(boilerplatePath);
-  download(template, boilerplatePath, function (err) {
+  download(template, boilerplatePath, {clone: true}, function (err) {
     spinner.stop()
     if (err) {
       console.log(err)

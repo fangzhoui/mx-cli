@@ -1,6 +1,6 @@
 {
-  "name": "react-webpack-template",
-  "version": "0.0.5",
+  "name": "react-webpack-tem",
+  "version": "0.0.2",
   "description": "a cli for react-template",
   "main": "./bin/jsm.js",
   "scripts": {
